@@ -71,7 +71,7 @@
     },
     {
       "titulo": "Data Science e Inteligência Artificial",
-      "cor": "#00C86F",
+      "cor": "#9cd33b",
       "link_extra": {
         "text": "Cursos de Data Science na Alura",
         "url": "https://www.alura.com.br/cursos-online-mobile"
@@ -97,7 +97,7 @@
     },
     {
       "titulo": "Filmes",
-      "cor": "#00C86F",
+      "cor": "oranges",
       "videos": [
         {
           "titulo": "Interestellar",
@@ -119,7 +119,7 @@
     },
     {
       "titulo": "Games",
-      "cor": "#00C86F",
+      "cor": "red",
       "link_extra": {
         "text": "Formação de Jogos na Alura",
         "url": "https://www.alura.com.br/cursos-online-front-end"
