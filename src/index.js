@@ -16,5 +16,5 @@ ReactDOM.render(
       <Route component={() => <div>Página 404</div>} />
     </Switch>
   </BrowserRouter>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
