@@ -1,49 +1,79 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React, { useState } from 'react';
 import PageRoot from '../../../components/PageRoot';
+import FormField from '../../../components/FormField';
 
 function CadastroCategoria() {
   const [categorias, setCategorias] = useState([]);
-  const [nomeCategoria, setNomeCategoria] = useState('');
+  const valoresIniciais = {
+    nome: '',
+    descricao: '',
+    cor: '#000000',
+  };
+  const [values, setValues] = useState(valoresIniciais);
+
+  function setValue(fieldName, value) {
+    setValues({
+      ...values,
+      [fieldName]: value,
+    });
+  }
+
+  function handleChange(event) {
+    setValue(event.target.getAttribute('name'), event.target.value);
+  }
+
   return (
     <PageRoot>
       <h1>Cadastro de Categoria</h1>
 
-      <form onSubmit={function(event) {
+      <form onSubmit={(event) => {
+        console.log(categorias);
         event.preventDefault();
         setCategorias([
           ...categorias,
-          nomeCategoria
+          values,
         ]);
+        setValues(valoresIniciais);
+      }}
+      >
+        <FormField
+          label="Nome da Categoria"
+          type="text"
+          name="nome"
+          value={values.nome}
+          onChange={handleChange}
+        />
 
-        setNomeCategoria('');
-      }}>
-        <label>
-          Nome da Categoria:
-          <input
-            type="text"
-            value={nomeCategoria}
-            onChange={function(event) {
-              setNomeCategoria(event.target.value);
-            }}
-          />
-        </label>
+        <FormField
+          label="Descrição"
+          type="textarea"
+          name="descricao"
+          value={values.descricao}
+          onChange={handleChange}
+        />
 
-        <button>
+        <FormField
+          label="Cor"
+          type="color"
+          name="cor"
+          value={values.descricao}
+          onChange={handleChange}
+        />
+
+        <button type="submit">
           Cadastrar
         </button>
       </form>
 
       <ul>
         {
-          categorias.map((categoria) => {
-            return <li key={categoria}>{categoria}</li>;
-          })
+          categorias.map((categoria) => <li key={categoria.nome}>{categoria.nome}</li>)
         }
-
       </ul>
 
     </PageRoot>
   );
 }
 
-export default CadastroCategoria 
+export default CadastroCategoria;
