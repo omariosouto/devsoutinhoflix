@@ -57,7 +57,7 @@ function CadastroCategoria() {
           label="Cor"
           type="color"
           name="cor"
-          value={values.descricao}
+          value={values.cor}
           onChange={handleChange}
         />
 
