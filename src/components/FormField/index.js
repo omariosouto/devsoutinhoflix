@@ -8,6 +8,10 @@ const FormFieldWrapper = styled.div`
   textarea {
     min-height: 150px;
   }
+
+  input[type="color"] {
+    padding-bottom: 0;
+  }
 `;
 
 const Label = styled.label``;
