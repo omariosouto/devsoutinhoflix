@@ -16,9 +16,9 @@
     "styled-components": "^5.1.1"
   },
   "scripts": {
-    "server": "json-server --watch db.json --port 8080",
+    "server": "node ./server.js",
     "dev": "concurrently \"react-scripts start\" \"npm run server\"",
-    "start": "react-scripts start",
+    "start": "npm run server",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
