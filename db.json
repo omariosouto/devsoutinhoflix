@@ -46,14 +46,14 @@
     {
       "id": 1,
       "categoriaId": 1,
-      "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
-      "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
+      "titulo": "SEO com React",
+      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
     },
     {
       "id": 2,
       "categoriaId": 1,
-      "titulo": "SEO com React",
-      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+      "titulo": "O que faz uma desenvolvedora front-end? #HipstersPontoTube",
+      "url": "https://www.youtube.com/watch?v=ZY3-MFxVdEw"
     },
     {
       "id": 3,
