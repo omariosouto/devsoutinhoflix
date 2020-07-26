@@ -1,6 +1,29 @@
 {
   "categorias": [
     {
+      "id": 6,
+      "titulo": "DevSoutinho",
+      "cor": "#ff6a00",
+      "link_extra": {
+        "text": "Canal no YouTube",
+        "url": "https://youtube.com/c/DevSoutinho"
+      }
+    },
+    {
+      "id": 5,
+      "titulo": "Games",
+      "cor": "red",
+      "link_extra": {
+        "text": "Formação de Jogos na Alura",
+        "url": "https://www.alura.com.br/cursos-online-front-end"
+      }
+    },
+    {
+      "id": 4,
+      "titulo": "Filmes",
+      "cor": "orange"
+    },
+    {
       "id": 1,
       "titulo": "Front End",
       "cor": "#6BD1FF",
@@ -26,23 +49,23 @@
         "text": "Cursos de Data Science na Alura",
         "url": "https://www.alura.com.br/cursos-online-mobile"
       }
-    },
-    {
-      "id": 4,
-      "titulo": "Filmes",
-      "cor": "orange"
-    },
-    {
-      "id": 5,
-      "titulo": "Games",
-      "cor": "red",
-      "link_extra": {
-        "text": "Formação de Jogos na Alura",
-        "url": "https://www.alura.com.br/cursos-online-front-end"
-      }
     }
   ],
   "videos": [
+    {
+      "id": 50,
+      "categoriaId": 6,
+      "titulo": "SEO com React",
+      "description": "Será que é tão difícil fazer SEO com React?",
+      "url": "https://www.youtube.com/watch?v=c8mVlakBESE"
+    },
+    {
+      "id": 51,
+      "categoriaId": 6,
+      "titulo": "Como fazer um React e aprender a ideia do Virtual DOM na prática",
+      "description": "Já parou pra pensar como que o React renderiza as coisas na tela?",
+      "url": "https://www.youtube.com/watch?v=5MzOCxSWrrc"
+    },
     {
       "id": 1,
       "categoriaId": 1,
@@ -189,10 +212,28 @@
       "url": "https://www.youtube.com/watch?v=JSapXD9vxYA"
     },
     {
-      "titulo": "Refazendo seu React do Futuro pt 3",
-      "url": "https://www.youtube.com/watch?v=5MzOCxSWrrc",
-      "categoriaId": 4,
-      "id": 30
+      "titulo": "O que todo projeto deveria ter? #01",
+      "url": "https://www.youtube.com/watch?v=yMRSDdifGW8",
+      "categoriaId": 6,
+      "id": 52
+    },
+    {
+      "titulo": "Como fazer um jogo com JavaScript?",
+      "url": "https://www.youtube.com/watch?v=jOAU81jdi-c",
+      "categoriaId": 6,
+      "id": 53
+    },
+    {
+      "titulo": "Como fazer o efeito de desenhar com CSS?",
+      "url": "https://www.youtube.com/watch?v=4cEMgap9wpk",
+      "categoriaId": 6,
+      "id": 54
+    },
+    {
+      "titulo": "Usando Excel como CMS + React",
+      "url": "https://www.youtube.com/watch?v=5t2gq3xJZ9o",
+      "categoriaId": 6,
+      "id": 55
     }
   ]
 }
